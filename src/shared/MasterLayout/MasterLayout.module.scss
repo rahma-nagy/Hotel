@@ -1,0 +1,18 @@
+.container {
+
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    &.flexContainer {
+      display: flex;
+      flex-direction: column; // Adjust the flex direction as needed
+    }
+  }
+    .masterLayout {
+    display: flex;
+  }
+
+  // .content {
+  //   flex: 1;
+  // }
+
+

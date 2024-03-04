@@ -1,0 +1,70 @@
+
+/* Animation for Text */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 30px;
+
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+  }
+
+ .animationText{
+    margin: 0;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: textAnimation 2s ease-in-out infinite alternate, colorAnimation 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes textAnimation {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes colorAnimation {
+    0% {
+      color: #fff;
+    }
+
+    25% {
+      color: #152C5B;
+    }
+    50% {
+      color: #cb1e1e;
+    }
+
+    100% {
+      color: #fff;
+    }
+  }
+  @keyframes fireworkAnimation {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #fff, 0 0 30px 15px #fff;
+    }
+
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px 10px #ffcc00, 0 0 30px 15px #ffcc00, 0 0 40px 20px #ffcc00;
+    }
+
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #fff, 0 0 30px 15px #fff;
+    }
+  }
+
+  /* End Animation for Text */

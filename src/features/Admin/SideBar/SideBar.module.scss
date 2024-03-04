@@ -1,0 +1,39 @@
+/* side bar */
+.MuiContainer-root {
+    padding-left: 0 !important;
+  }
+  .sidebarContainer .ps-sidebar-container,
+  ._sidebar_gufjs_21 {
+    background-color: rgba(32, 63, 199, 1);
+    color: #fff;
+    position: relative;
+    height: 100vh;
+  }
+  .sidebarContainer .ps-sidebar-container .ps-menu-button:hover {
+    background-color: rgba(26, 27, 30, 0.17);
+  }
+  ._container1_9ea38_1 ._sidebar_9ea38_21 {
+    background-color: rgba(32, 63, 199, 1);
+  }
+  .toggleSidebarBtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 7px;
+    color: rgba(255, 73, 139, 1);
+    cursor: pointer;
+  }
+
+  .toggleSidebarBtn svg {
+    transition: transform 0.3s ease;
+  }
+
+  .sidebarContainer.collapsed .toggleSidebarBtn svg {
+    transform: rotate(180deg);
+  }
+
+  .menuSpace {
+    margin-top: 3rem;
+    margin-left: 0.3rem;
+  }
+  

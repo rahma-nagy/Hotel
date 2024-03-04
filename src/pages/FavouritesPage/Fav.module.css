@@ -1,0 +1,131 @@
+
+.container{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:1rem;
+  }
+
+  .imageWrapper{
+    flex-shrink:0;
+    position:relative;
+
+    height:300px;
+    width:400px;
+    overflow:hidden;
+    border-radius:15px;
+
+  }
+  .badge{
+    padding:5px;
+    background-color: deeppink;
+    color: #fff;
+    position:absolute;
+    right:40px;
+    top:0px;
+    border-bottom-left-radius:15px;
+
+  z-index: 5;
+  }
+ .imageWrapper img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+
+  }
+  .roomName{
+    padding:5px;
+
+    color: #fff;
+    position:absolute;
+
+    bottom:32px;
+
+
+  z-index: 5;
+  }
+  .overlay{
+    position:absolute;
+    inset:0;
+    background: rgba(0,0,0,0.3);
+    width:100%;
+    height:100%;
+    display:grid;
+    place-content:center;
+    transform:translateY(100%);
+    transition:transform 500ms ease-in-out;
+
+  }
+
+
+  .imageWrapper:hover .overlay{
+    transform:translateY(0);
+  }
+
+/* Animation for Text */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 30px;
+
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: textAnimation 2s ease-in-out infinite alternate, colorAnimation 4s ease-in-out infinite alternate;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes colorAnimation {
+  0% {
+    color: #fff;
+  }
+
+  25% {
+    color: #152C5B;
+  }
+  50% {
+    color: #cb1e1e;
+  }
+
+  100% {
+    color: #fff;
+  }
+}
+@keyframes fireworkAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #fff, 0 0 30px 15px #fff;
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px #ffcc00, 0 0 30px 15px #ffcc00, 0 0 40px 20px #ffcc00;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #fff, 0 0 30px 15px #fff;
+  }
+}

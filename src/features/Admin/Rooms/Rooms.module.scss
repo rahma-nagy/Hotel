@@ -1,0 +1,45 @@
+.customBtn {
+  // margin: 2px;
+  // background-color: transparent;
+  // border: none;
+  // padding: 4px;
+}
+.load{
+  margin-top: 60px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  color: #000;
+  padding: 20px;
+}
+
+$modal-bg-color: white;
+$modal-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+$modal-fixed-height: 80vh;
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+}
+
+.paper {
+  background-color: $modal-bg-color;
+  box-shadow: $modal-box-shadow;
+  padding: 16px 32px;
+  width: 50%; // Adjust the width as needed
+  max-height: $modal-fixed-height; // Set the fixed height
+  overflow-y: auto;
+  max-width: 80vw;
+
+  // Additional styles for the modal content
+  .paper {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+// ... other styles

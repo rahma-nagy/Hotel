@@ -1,0 +1,45 @@
+
+// .imageBack{
+//     position: absolute;
+//     border: 2px solid #ccc;
+//     border-radius: 15px  15px 100px 15px;
+//     width: 20%;
+//     height: 53%;
+//     left: 25%;
+//     bottom: 33%;
+// }
+
+// @media (max-width: 991px) {
+//     .imageBack {
+//         display: none;
+//      }
+// }
+// .reviewImage{
+//     position: relative;
+//     border-radius:  15px  15px 100px 15px;
+// }
+.imageWrapper{
+    width:22rem;
+    height:30rem;
+   margin-right: 4rem;
+  border-radius: 14px;
+  border: 2px solid #E5E5E5;
+  }
+
+.imageWrapper  img{
+    width:100%;
+    height:100%;
+    border-radius:  0.9375rem 0.9375rem 6.25rem 0.9375rem;
+    object-position:bottom;
+    object-fit:cover;
+    transform:translate(2.5rem,2.5rem)
+  }
+  @media (max-width: 991px) {
+       .imageWrapper {
+            margin-bottom:4rem;
+         }
+    }
+
+    .messageField{
+     width: 500px;
+    }
